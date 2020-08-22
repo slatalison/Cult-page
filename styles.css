@@ -1,0 +1,342 @@
+body{
+    background-color: #f6f6f6;
+    overflow-y: scroll;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: "Arial", sans-serif;
+    font-size: 100%;
+    color:#222222;
+}
+
+a {
+    text-decoration: none;
+    color:#0645ad;
+}
+
+/* a:visited{
+    color:#0b0080;
+} */
+
+a:hover{
+    text-decoration: underline;
+}
+
+#panel {
+    position: absolute;
+    top: 0;
+    width: 11em;
+    left: 0;
+    font-size: inherit;
+    padding-left:0.5em;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.25em;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    line-height: 1.3;
+    color: #000;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+    /* padding-bottom: 0.17em; */
+    border-bottom: 1px solid #a2a9b1;
+}
+
+#head-base{
+    /* margin-top:-5em; */
+    /* margin-left:10em; */
+    height:5em;
+    background-color: #fbfbfb;
+    background-image: linear-gradient(to bottom,#ffffff 50%,#f6f6f6 100%);
+    background-position: bottom left;
+}
+
+#right-navigation{
+    float:right;
+    margin-top: 2.5em;
+    height:2.5em;
+}
+
+.vector-menu-tabs{
+    background-position: left bottom;
+    float:left;
+    height:2.5em;
+    padding-left:1px;
+}
+
+.vector-menu-tabs li{
+    /* color:#0645ad; */
+    float:left;
+    display:block;
+    /* height: 100%;
+    margin:0;
+    padding:0;
+    line-height: 1.125em; */
+    white-space: nowrap;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    /* background-image: linear-gradient(to bottom, rgba(167,215,249,0) 0,#a7d7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 0.7px 100%; */
+}
+
+.vector-menu-tabs-unvisited{
+    background-image: linear-gradient(to top, #77c1f6 0,#e8f2f8 1px,#ffffff 100%);
+}
+
+.alltag{
+    color:#202122;
+    text-decoration: none;
+    background-position: right bottom;
+    box-sizing: border-box;
+    height:3.08em;
+    padding-top:1.25em;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size:0.8125em;
+    cursor: pointer;
+}
+
+.visited-tag{
+    background-image: linear-gradient(to top, #ffffff 100%,#e8f2f8 1px,#ffffff 100%);
+}
+
+#left-navigation-color{
+    float:left;
+    margin-left: 11em;
+    margin-top: 2.5em;
+    margin-bottom: -2.5em;
+}
+
+#left-navigation{
+    float:left;
+    margin-left: 11em;
+    margin-top: 1.5em;
+}
+
+#left-navigation ul{
+    float:left;
+    list-style: none none;
+    padding-left: 0;
+}
+
+#left-navigation li{
+    white-space: nowrap;
+}
+
+#head-tabs{
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-position: left bottom;
+    padding-left:1px;
+    float:left;
+    height:2.5em;
+    padding-left:1px;
+}
+
+#head-tabs ul{
+    height:100%;
+    list-style: none none;
+    margin:0;
+    padding:0;
+}
+
+#p-search{
+    float:left;
+    position: relative;
+    height:2.5em;
+    min-width:5em;
+    width:20vw;
+    max-width:20em;
+    margin-right:1em;
+    margin-left:0.5em;
+}
+
+.search-input{
+    background-color: rgba(255,255,255,0.5);
+    color:#000000;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #a2a9b1;
+    border-radius: 2px;
+    margin-top: 0.5em;
+    padding: 0.4em 1.84em 0.4em 0.4em;
+    box-shadow: inset 0 0 0 1px transparent;
+    font-size: 0.8125em;
+    direction: 1tr;
+    transition: border-color 250ms, box-shadow 250ms;
+}
+
+/* #head-tabs li{
+    float:left;
+    display:block;
+    height:100%;
+    margin:0;
+    padding:0;
+    line-height: 1.125em;
+    white-space: nowrap;
+} */
+
+#content {
+    border: 1px solid #a7d7f9;
+    border-right-width: 0;
+    margin-top: -1px;
+    margin-left: 11em;
+    background-color: #ffffff;
+    columns: #202122;
+    padding: 1em;
+    direction: 1tr;
+    padding:0.5em 1.5em 1.5em 1.5em;
+}
+
+#body-content {
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+.toc {
+    display: table;
+    font-size: 95%;
+    padding: 7px;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+}
+
+.toc ul{
+    list-style: none none;
+    list-style-image:none;
+    margin:0.3em 0;
+    padding:0;
+    
+}
+
+.totitle {
+    text-align: center;
+}
+
+.portal{
+    margin:0.18em 0.6em 0 0.7em;
+    padding: 0.18em 0;
+}
+
+.portal-divider{
+    height:1.2px;
+    width:87%;
+    background-image:linear-gradient(to right, transparent 0, #c8ccd1 35%, #c8ccd1 70%, transparent 100%);
+}
+
+.portal ul{
+    list-style: none none;
+    margin: 0;
+    padding-top: 0.3em;
+    padding-left:0.5em;
+}
+
+.portal li{
+    padding:0.25em 0;
+    font-size: 0.75em;
+    line-height: 1.125em;
+    word-wrap: break-word;
+}
+
+.portal h3{
+    color: #444444;
+    font-weight: normal;
+    margin: 0.5em 0 0 0.66666667em;
+    padding:0.25em 0;
+    cursor: default;
+    border:0;
+    font-size: 0.75em;
+    overflow: hidden;
+}
+
+.wiki-logo{
+    background-image:url(enwiki-1.5x.png);
+    background-size: 135px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    width:10em;
+    height:160px;
+    margin-bottom: 1em;
+}
+
+#p-personal{
+    position: absolute;
+    top:0;
+    right:0.75em;
+    z-index: 100;
+}
+
+#p-personal ul{
+    list-style:none none;
+}
+
+#p-personal li{
+    float:left;
+    margin-left:0.75em;
+    margin-bottom:0.1em;
+    font-size:0.75em;
+    line-height:1.16666667;
+    white-space:nowrap;
+}
+
+
+#body-content h2{
+    font-family: "Linux Libertine", "Georgia", "Times", serif;
+    line-height:1.3;
+    font-weight:normal;
+    margin-bottom:0.25em;
+    overflow: hidden;
+    border-bottom:1px solid #a2a9b1;
+}
+
+.infobox{
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: #f8f9fa;
+    color:black;
+    margin:0.5em 0 0.5em 1em;
+    padding:0.2em;
+    float:right;
+    clear:right;
+    line-height:1.5em;
+    font-size:88%;
+    text-align: left;
+}
+
+.more-info{
+    border-left:10px solid #f28500;
+    margin:0 10%;
+    border-top: 1px solid #a2a9b1;
+    border-right: 1px solid #a2a9b1;
+    border-bottom: 1px solid #a2a9b1;
+    background-color: #fbfbfb;
+    box-sizing:border-box;
+}
+
+.hatnote{
+    padding-left:1.6em;
+    margin-bottom:0.5em;
+    font-style:italic;
+}
+
+.siteSub{
+    font-size:92%;
+    display:block;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
+#footer{
+    /* padding:0.25em; */
+    margin-left:16em;
+    margin-bottom:3em;
+    font-size:0.75em;
+}
